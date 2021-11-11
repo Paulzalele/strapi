@@ -1,9 +1,8 @@
 {
-  "kind": "collectionType",
-  "collectionName": "blogs",
+  "kind": "singleType",
+  "collectionName": "homepages",
   "info": {
-    "name": "Blogs",
-    "description": ""
+    "name": "Homepage"
   },
   "options": {
     "increments": true,
@@ -15,10 +14,10 @@
     "Title": {
       "type": "string"
     },
-    "Content": {
-      "type": "richtext"
+    "Meta_Description": {
+      "type": "text"
     },
-    "Media": {
+    "Photo": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -30,14 +29,8 @@
       "required": false,
       "pluginOptions": {}
     },
-    "blogs": {
-      "model": "blogs"
-    },
-    "Date": {
-      "type": "datetime"
-    },
-    "Meta_Description": {
-      "type": "text"
+    "Content": {
+      "type": "richtext"
     }
   }
 }
